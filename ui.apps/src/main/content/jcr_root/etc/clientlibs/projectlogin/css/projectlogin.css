@@ -25,3 +25,41 @@ li a:hover:not(.active) {
 .active {
   background-color: #04AA6D;
 }
+
+.signin{
+    width:400px;
+    height:320px;
+    margin:5% 30%;
+    padding:30px;
+    text-align:center;
+    box-shadow: 0 12px 40px rgb(0 0 0 / 12%);
+    background-color: white;
+    border-radius:10px;
+}
+
+.form-input{
+	width:90%;
+    height:50px;
+    font-size:16px;
+    margin-top:10px;
+}
+
+.form-button{
+	width: 92%;
+    height: 50px;
+    font-size: 16px;
+    background: rgb(0,89,214);
+    color: white;
+    border-radius: 3px;
+    border:none;
+}
+
+#msg{
+    display:none;
+  	background: red;
+    color:black;
+    margin:16px;
+    width:92%;
+    font-size:16px;
+}
+
