@@ -1,0 +1,6 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<ul data-sly-use.topnav="topnav.js" data-sly-list="${topnav.root.listChildren}">
+  	<li data-sly-test='${item.title!="Login Page"}'><a  class="${currentPage.Title==item.title ? 'active' : ''}" href="${item.path}.html">${item.title}</a></li>
+	<li style="float:right" data-sly-test='${item.title=="Login Page"}'><a class="${currentPage.Title==item.title ? 'active' : ''}" href="${item.path}.html"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+</ul>

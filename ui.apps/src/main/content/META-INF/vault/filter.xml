@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/projectlogin"/>
+    <filter root="/conf/projectlogin" />
+    <filter root="/content/projectlogin" />
+    <filter root="/content/dam/projectlogin" />
+    <filter root="/etc/clientlibs/projectlogin"/>
+</workspaceFilter>
