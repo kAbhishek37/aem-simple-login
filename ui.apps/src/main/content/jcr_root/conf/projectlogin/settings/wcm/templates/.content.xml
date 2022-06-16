@@ -3,4 +3,5 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <content-page/>
+    <project-login-dynamic-template/>
 </jcr:root>
