@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<body>
+    <div class="signin">
+		<h1>LOGIN PAGE</h1>
+		<form name="login" id="login" method="POST">
+			<label id="msg">Wrong Name or Password</label>
+			<input type="text" class="form-input" placeholder="Enter Name" name="fname" value=""><br>
+			<input type="password" class="form-input" placeholder="Enter Password" name="password" value=""><br><br>
+			<input type="Submit" class="form-button" name="submit" id="submit" value="Log In">
+		</form>
+    </div>
+	</body>
+	<script>
+		$("#login").submit(function(e) {
+			e.preventDefault(); // avoid to execute the actual submit of the form.
+			var form = $(this);
+			var url = "/bin/user/login";
+
+			$.ajax({
+
+				type : "POST",
+				url : url,
+				data : form.serialize(), // serializes the form's elements.
+				success : function(data, textStatus, jqXHR) {
+					if(data.status){
+						location.href="/content/projectlogin/en/home-page/success.html"
+					}
+					else {
+                   		document.getElementById("msg").style.display="block";
+					}
+				},
+				error : function(XMLHttpRequest, textStatus, errorThrown) {
+				}
+			});
+		});
+	</script>
+</html>

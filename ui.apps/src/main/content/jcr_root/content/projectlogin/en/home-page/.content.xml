@@ -8,4 +8,5 @@
         jcr:primaryType="cq:PageContent"
         jcr:title="Home Page"
         sling:resourceType="projectlogin/components/structure/page"/>
+    <success/>
 </jcr:root>
